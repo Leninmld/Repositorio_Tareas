@@ -1,0 +1,72 @@
+                                                                         Trabajo de Programación Orientada a Objetos
+Nombre:Lenin Maldonado
+NRC:13930
+
+¿Qué es Git?
+Es un proyecto de código abierto, mantenido de forma activa, desarrollado originalmente en 2005 por Linus Torvalds.
+En lugar de tener un solo lugar para el historial de versiones completo de un software, en GIT, cada copia de trabajo del código del desarrollador también es un repositorio en el cual se puede encontrar el historial completo de todos los cambios.
+Además de ser distribuido, GIT ha sido diseñado teniendo en cuenta el rendimiento, la seguridad y la flexibilidad.
+
+                                                   Comandos de GIT
+Comandos para configurar y crear repositorios
+
+
+Git config : El comando git config sirve para definir valores de configuración de Git a nivel de un proyecto global o local. Estos niveles de configuración se corresponden con archivos de texto con extensión .gitconfig.
+
+
+Git init : Este comando inicializa un nuevo repositorio en el repositorio local.
+
+
+Git clone : Este comando inicializa un nuevo repositorio en el repositorio local clonando íntegramente el contenido de un repositorio remoto que le indiquemos mediante una URL.
+
+
+
+Comandos GIT manejo de archivos y cambios
+
+
+Git add : Una vez que hemos realizado los cambios necesarios en nuestra área de trabajo, para comenzar la confirmación de dichos cambios, es necesario pasar todos los archivos que queramos confirmar al área de preparación (staging area).
+
+
+Git commit : Una vez se tiene archivos preparados en el área de preparación, para confirmar dichos archivos y crear una confirmación de cambios la sentencia utilizada es git commit.
+
+
+Git log : Cada vez que confirmamos cambios, se crea una confirmación con un número hash identificativo. Este permite ver las confirmaciones realizadas en nuestro repositorio 
+
+
+Git diff : Este comando permite ver las diferencias que existen entre las confirmaciones que determinemos. Se hace referenciando las confirmaciones mediante su número hash.
+
+
+Git reset : Puede descartar confirmaciones que ya no necesita usar utilizando el comando git reset. Hay que tener mucho cuidado con este comando ya que es destructivo y por tanto borrará todos los cambios realizados en el commit que le indiquemos.
+
+
+Git revert : Puede utilizar dicho comando para deshacer de forma segura una confirmación que ya se haya enviado.
+
+
+Git tag : Una etiqueta Git (tag) se utiliza para etiquetar y marcar una confirmación específica en el historial. Las etiquetas se usan comúnmente para indicar versiones de lanzamiento (release), con el nombre de la versión (por ejemplo, v1.0) que es el nombre de la etiqueta.
+
+
+Comandos GIT para manejo de repositorios remotos
+
+
+Git remote : Para conectar al repositorio remoto con el cual nos comunicaremos entre nuestro repositorio local y dicho repositorio remoto el comando utilizado es git remote.
+
+
+Git Branch :Permite el trabajo en paralelo sobre distintas partes del código base para añadir funcionalidades, corregir errores o realizar versiones de nuestros proyectos.
+
+
+Git checkout : Para moverse entre las ramas creadas y realizar los cambios necesarios sobre dichas ramas, el comando utilizado es git checkout.
+
+
+Git status : Podemos comprobar en cualquier momento el estado de la rama en la que nos encontramos para comprobar si existen archivos (o directorios) que tienen cambios que deben de ser confirmados o rechazados.
+
+
+Git merge : Una vez que se han realizado los cambios necesarios en la rama creada, se debe de combinar con la rama “superior” para que se unan los cambios entre ambas ramas y la rama superior “apunte” a la confirmación más actualizada del proyecto.
+
+
+Git rebase : Si se desea mantener un historial de revisiones limpio el comando a utilizar para combinar las ramas sería git rebase. Este comando reorganiza las ramas y crea una única revisión de dicha combinación de ramas.
+
+
+Git push : Una vez que ya hemos realizado todos los cambios necesarios, hemos combinado todas nuestras ramas (o las deseadas) y tenemos dichos cambios confirmados en la rama maestra (master) se puede llevar a cabo la sincronización del contenido de nuestro repositorio local con el repositorio remoto.
+
+
+Git pull : Para extraer todos los cambios del repositorio remoto en nuestro repositorio local y poder tener así la última confirmación de dicho repositorio, el comando a utilizar es git pull.
